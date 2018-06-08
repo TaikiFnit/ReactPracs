@@ -20,7 +20,7 @@ const store = createStore(history);
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <div className="container">
         <CssBaseline />
         <AppBar position="static" color="default">
           <Toolbar>
