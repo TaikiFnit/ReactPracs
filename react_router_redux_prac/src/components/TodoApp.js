@@ -1,6 +1,12 @@
-import React from "react";
+import React from 'react';
 
-export default function TodoApp({ task, tasks, inputTask, addTask }) {
+export default function TodoApp({
+  task,
+  tasks,
+  inputTask,
+  addTask,
+  redirectToFnit
+}) {
   return (
     <div>
       <input
@@ -14,6 +20,13 @@ export default function TodoApp({ task, tasks, inputTask, addTask }) {
           return <li key={i}>{item}</li>;
         })}
       </ul>
+      <button
+        onClick={() => {
+          redirectToFnit();
+        }}
+      >
+        Redirect To Fnit
+      </button>
     </div>
   );
 }
