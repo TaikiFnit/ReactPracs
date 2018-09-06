@@ -17,8 +17,9 @@ render(
       <div>
         <Link to="/">Home</Link>
         <Link to="/fnit">Fnit</Link>
-        <Route exact path="/fnit" component={Fnit} />
+        {/* pathで指定したurlにmatchする時, Routeで指定したcomponentがrenderされる*/}
         <Route exact path="/" component={TodoApp} />
+        <Route exact path="/fnit" component={Fnit} />
       </div>
     </ConnectedRouter>
   </Provider>,
